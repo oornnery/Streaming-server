@@ -1,0 +1,27 @@
+**[openvpn](https://openvpn.net/)** 
+**[Docker Hub](https://hub.docker.com/r/linuxserver/openvpn-as)** 
+
+### Docker Compose
+
+```yaml
+---
+version: "2.1"
+services:
+  openvpn-as:
+    image: ghcr.io/linuxserver/openvpn-as
+    container_name: openvpn-as
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - INTERFACE=eth0 #optional
+    volumes:
+      - <path to data>:/config
+    ports:
+      - 943:943
+      - 9443:9443
+      - 1194:1194/udp
+    restart: unless-stopped
+```
