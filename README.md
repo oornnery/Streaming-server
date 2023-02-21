@@ -118,43 +118,43 @@ Docker version 20.10.12, build 20.10.12-0ubuntu4
 
 ### Apresentando os programas e suas funcionalidades
 
-- **[[OpenVPN]]** Um software que permite criar uma rede privada virtual.
+- **[OpenVPN](\docs\OpenVPN.md)** Um software que permite criar uma rede privada virtual.
 	**[openvpn](https://openvpn.net/) [Docker Hub](https://hub.docker.com/r/linuxserver/openvpn-as)**
 
-- **[[Qbittorrent]]** um software de código aberto que permite baixar e compartilhar arquivos usando o protocolo BitTorrent (Depende do **[[OpenVPN]]** para realizar os downloads)
+- **[Qbittorrent](\docs\Qbittorrent.md)** um software de código aberto que permite baixar e compartilhar arquivos usando o protocolo BitTorrent (Depende do **[[OpenVPN]]** para realizar os downloads)
 	**[GitHub](https://github.com/qbittorrent/qBittorrent) [Docker Hub](https://hub.docker.com/r/linuxserver/qbittorrent)** 
 
-+ **[[Jackett]]** é um software que permitr usar vários rastreadores de torrents com aplicativos que suportam a API ***Tornab*** ou ***Newznab***
++ **[Jackett](\docs\Jackett.md)** é um software que permitr usar vários rastreadores de torrents com aplicativos que suportam a API ***Tornab*** ou ***Newznab***
 	**[GitHub](https://github.com/Jackett/Jackett) [Docker Hub](https://hub.docker.com/r/linuxserver/jackett)**
 
-+ **[[Radarr]]** é um software que gerencia sua coleção de filmes para Usenet e BitTorrent1. Radarr pode monitorar vários feeds RSS para novos filmes e se comunicar com clientes e indexadores para baixar, organizar e renomear ele. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Radarr](\docs\Radarr.md)** é um software que gerencia sua coleção de filmes para Usenet e BitTorrent1. Radarr pode monitorar vários feeds RSS para novos filmes e se comunicar com clientes e indexadores para baixar, organizar e renomear ele. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/radarr) [Radarr](https://radarr.video/)**
 
-+ **[[Sonarr]]** é um software que gerencia sua coleção de séries de TV para Usenet e BitTorrent4. Sonarr pode monitorar vários feeds RSS para novos episódios e se comunicar com clientes e indexadores para baixar, organizar e renomear eles. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Sonarr](\docs\Sonarr.md)** é um software que gerencia sua coleção de séries de TV para Usenet e BitTorrent4. Sonarr pode monitorar vários feeds RSS para novos episódios e se comunicar com clientes e indexadores para baixar, organizar e renomear eles. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/sonarr) [Sonarr](https://sonarr.tv/)**
 
-+ **[[Bazarr]]** é um aplicativo complementar ao Sonarr e Radarr. Ele gerencia e baixa legendas com base em seus requisitos. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Bazarr](\docs\Bazarr.md)** é um aplicativo complementar ao Sonarr e Radarr. Ele gerencia e baixa legendas com base em seus requisitos. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/bazarr) [Bazarr](https://www.bazarr.media/)**
 
-- **[[Liddar]]** é um método para determinar distâncias ao mirar um objeto ou uma superfície com um laser e medir o tempo para a luz refletida retornar ao receptor
+- **[Lidarr](\docs\Lidarr.md)** é um método para determinar distâncias ao mirar um objeto ou uma superfície com um laser e medir o tempo para a luz refletida retornar ao receptor
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/lidarr) [Lidarr](https://lidarr.audio/)**
 
-- **[[Prowlarr]]**  é um gerenciador/proxy de indexadores que se integra com seus vários aplicativos PVR. Prowlarr suporta o gerenciamento de rastreadores de torrent e indexadores de Usenet12. Ele se integra perfeitamente com Lidarr, Mylar3, Radarr, Readarr e Sonarr oferecendo o gerenciamento completo de seus indexadores sem necessidade de configuração por aplicativo
+- **[Prowlarr](\docs\Prowlarr.md)**  é um gerenciador/proxy de indexadores que se integra com seus vários aplicativos PVR. Prowlarr suporta o gerenciamento de rastreadores de torrent e indexadores de Usenet12. Ele se integra perfeitamente com Lidarr, Mylar3, Radarr, Readarr e Sonarr oferecendo o gerenciamento completo de seus indexadores sem necessidade de configuração por aplicativo
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/prowlarr) [Prowlarr](https://prowlarr.com/)**
 
-- **[[Ombi]]**  Ombi é um aplicativo web auto-hospedado que permite que seus usuários compartilhados do Plex ou Emby solicitem conteúdo por si mesmos.
+- **[Ombi](\docs\Ombi.md)**  Ombi é um aplicativo web auto-hospedado que permite que seus usuários compartilhados do Plex ou Emby solicitem conteúdo por si mesmos.
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/ombi) [Ombi](https://ombi.io/)**
 
-- **[[Jellyseerr]]**  é um aplicativo de software gratuito e de código aberto para gerenciar solicitações para sua biblioteca de mídia. É um fork do Overseerr criado para trazer suporte para os servidores de mídia Jellyfin e Emby
+- **[Jellyseerr](\docs\Jellyseerr.md)**  é um aplicativo de software gratuito e de código aberto para gerenciar solicitações para sua biblioteca de mídia. É um fork do Overseerr criado para trazer suporte para os servidores de mídia Jellyfin e Emby
 	**[Docker Hub](https://hub.docker.com/r/fallenbagel/jellyseerr) [GitHub](https://github.com/Fallenbagel/jellyseerr)**
 
-- **[[Rclone]]** é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem.
+- **[Rclone](\docs\Rclone.md)** é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem.
 	**[Docker Hub](https://hub.docker.com/r/rclone/rclone) [Rclone](https://rclone.org)**
 
-- **[[Jellyfin]]** é um Sistema de Mídia de Software Livre que permite controlar o gerenciamento e a transmissão de sua mídia. Ele é uma alternativa aos Emby e Plex proprietários, para fornecer mídia de um servidor dedicado para dispositivos de usuário final por meio de vários aplicativos
+- **[Jellyfin](\docs\Jellyfin.md)** é um Sistema de Mídia de Software Livre que permite controlar o gerenciamento e a transmissão de sua mídia. Ele é uma alternativa aos Emby e Plex proprietários, para fornecer mídia de um servidor dedicado para dispositivos de usuário final por meio de vários aplicativos
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/jellyfin) [Jellyfin](https://jellyfin.org/)**
 
-- **[[Plex]]** é um sistema de mídia que permite transmitir filmes e programas de TV em quase qualquer dispositivo. Ele também oferece TV ao vivo, notícias e canais gratuitos
+- **[Plex](\docs\Plex.md)** é um sistema de mídia que permite transmitir filmes e programas de TV em quase qualquer dispositivo. Ele também oferece TV ao vivo, notícias e canais gratuitos
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/plex) [Plex](https://www.plex.tv/)**
 
 
