@@ -118,43 +118,43 @@ Docker version 20.10.12, build 20.10.12-0ubuntu4
 
 ### Apresentando os programas e suas funcionalidades
 
-- **[OpenVPN](\docs\OpenVPN.md)** Um software que permite criar uma rede privada virtual.
+- **[OpenVPN](./docs/OpenVPN.md)** Um software que permite criar uma rede privada virtual.
 	**[openvpn](https://openvpn.net/) [Docker Hub](https://hub.docker.com/r/linuxserver/openvpn-as)**
 
-- **[Qbittorrent](\docs\Qbittorrent.md)** um software de código aberto que permite baixar e compartilhar arquivos usando o protocolo BitTorrent (Depende do **[[OpenVPN]]** para realizar os downloads)
+- **[Qbittorrent](./docs/Qbittorrent.md)** um software de código aberto que permite baixar e compartilhar arquivos usando o protocolo BitTorrent (Depende do **[[OpenVPN]]** para realizar os downloads)
 	**[GitHub](https://github.com/qbittorrent/qBittorrent) [Docker Hub](https://hub.docker.com/r/linuxserver/qbittorrent)** 
 
-+ **[Jackett](\docs\Jackett.md)** é um software que permitr usar vários rastreadores de torrents com aplicativos que suportam a API ***Tornab*** ou ***Newznab***
++ **[Jackett](./docs/Jackett.md)** é um software que permitr usar vários rastreadores de torrents com aplicativos que suportam a API ***Tornab*** ou ***Newznab***
 	**[GitHub](https://github.com/Jackett/Jackett) [Docker Hub](https://hub.docker.com/r/linuxserver/jackett)**
 
-+ **[Radarr](\docs\Radarr.md)** é um software que gerencia sua coleção de filmes para Usenet e BitTorrent1. Radarr pode monitorar vários feeds RSS para novos filmes e se comunicar com clientes e indexadores para baixar, organizar e renomear ele. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Radarr](./docs/Radarr.md)** é um software que gerencia sua coleção de filmes para Usenet e BitTorrent1. Radarr pode monitorar vários feeds RSS para novos filmes e se comunicar com clientes e indexadores para baixar, organizar e renomear ele. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/radarr) [Radarr](https://radarr.video/)**
 
-+ **[Sonarr](\docs\Sonarr.md)** é um software que gerencia sua coleção de séries de TV para Usenet e BitTorrent4. Sonarr pode monitorar vários feeds RSS para novos episódios e se comunicar com clientes e indexadores para baixar, organizar e renomear eles. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Sonarr](./docs/Sonarr.md)** é um software que gerencia sua coleção de séries de TV para Usenet e BitTorrent4. Sonarr pode monitorar vários feeds RSS para novos episódios e se comunicar com clientes e indexadores para baixar, organizar e renomear eles. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/sonarr) [Sonarr](https://sonarr.tv/)**
 
-+ **[Bazarr](\docs\Bazarr.md)** é um aplicativo complementar ao Sonarr e Radarr. Ele gerencia e baixa legendas com base em seus requisitos. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
++ **[Bazarr](./docs/Bazarr.md)** é um aplicativo complementar ao Sonarr e Radarr. Ele gerencia e baixa legendas com base em seus requisitos. (Depende do **[[Jackett]]** para traduzir a consulta e rastrear o torrent)
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/bazarr) [Bazarr](https://www.bazarr.media/)**
 
-- **[Lidarr](\docs\Lidarr.md)** é um método para determinar distâncias ao mirar um objeto ou uma superfície com um laser e medir o tempo para a luz refletida retornar ao receptor
+- **[Lidarr](./docs/Lidarr.md)** é um método para determinar distâncias ao mirar um objeto ou uma superfície com um laser e medir o tempo para a luz refletida retornar ao receptor
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/lidarr) [Lidarr](https://lidarr.audio/)**
 
-- **[Prowlarr](\docs\Prowlarr.md)**  é um gerenciador/proxy de indexadores que se integra com seus vários aplicativos PVR. Prowlarr suporta o gerenciamento de rastreadores de torrent e indexadores de Usenet12. Ele se integra perfeitamente com Lidarr, Mylar3, Radarr, Readarr e Sonarr oferecendo o gerenciamento completo de seus indexadores sem necessidade de configuração por aplicativo
+- **[Prowlarr](./docs/Prowlarr.md)**  é um gerenciador/proxy de indexadores que se integra com seus vários aplicativos PVR. Prowlarr suporta o gerenciamento de rastreadores de torrent e indexadores de Usenet12. Ele se integra perfeitamente com Lidarr, Mylar3, Radarr, Readarr e Sonarr oferecendo o gerenciamento completo de seus indexadores sem necessidade de configuração por aplicativo
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/prowlarr) [Prowlarr](https://prowlarr.com/)**
 
-- **[Ombi](\docs\Ombi.md)**  Ombi é um aplicativo web auto-hospedado que permite que seus usuários compartilhados do Plex ou Emby solicitem conteúdo por si mesmos.
+- **[Ombi](./docs/Ombi.md)**  Ombi é um aplicativo web auto-hospedado que permite que seus usuários compartilhados do Plex ou Emby solicitem conteúdo por si mesmos.
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/ombi) [Ombi](https://ombi.io/)**
 
-- **[Jellyseerr](\docs\Jellyseerr.md)**  é um aplicativo de software gratuito e de código aberto para gerenciar solicitações para sua biblioteca de mídia. É um fork do Overseerr criado para trazer suporte para os servidores de mídia Jellyfin e Emby
+- **[Jellyseerr](./docs/Jellyseerr.md)**  é um aplicativo de software gratuito e de código aberto para gerenciar solicitações para sua biblioteca de mídia. É um fork do Overseerr criado para trazer suporte para os servidores de mídia Jellyfin e Emby
 	**[Docker Hub](https://hub.docker.com/r/fallenbagel/jellyseerr) [GitHub](https://github.com/Fallenbagel/jellyseerr)**
 
-- **[Rclone](\docs\Rclone.md)** é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem.
+- **[Rclone](./docs/Rclone.md)** é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem.
 	**[Docker Hub](https://hub.docker.com/r/rclone/rclone) [Rclone](https://rclone.org)**
 
-- **[Jellyfin](\docs\Jellyfin.md)** é um Sistema de Mídia de Software Livre que permite controlar o gerenciamento e a transmissão de sua mídia. Ele é uma alternativa aos Emby e Plex proprietários, para fornecer mídia de um servidor dedicado para dispositivos de usuário final por meio de vários aplicativos
+- **[Jellyfin](./docs/Jellyfin.md)** é um Sistema de Mídia de Software Livre que permite controlar o gerenciamento e a transmissão de sua mídia. Ele é uma alternativa aos Emby e Plex proprietários, para fornecer mídia de um servidor dedicado para dispositivos de usuário final por meio de vários aplicativos
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/jellyfin) [Jellyfin](https://jellyfin.org/)**
 
-- **[Plex](\docs\Plex.md)** é um sistema de mídia que permite transmitir filmes e programas de TV em quase qualquer dispositivo. Ele também oferece TV ao vivo, notícias e canais gratuitos
+- **[Plex](./docs/Plex.md)** é um sistema de mídia que permite transmitir filmes e programas de TV em quase qualquer dispositivo. Ele também oferece TV ao vivo, notícias e canais gratuitos
 	**[Docker Hub](https://hub.docker.com/r/linuxserver/plex) [Plex](https://www.plex.tv/)**
 
 
@@ -163,6 +163,220 @@ Docker version 20.10.12, build 20.10.12-0ubuntu4
 
 ### Criando arquivo do docker-compose.
 
+```Shell
+version: '2'
+name: media-server
+services:
+  # openvpn-as:
+  #   image: ghcr.io/linuxserver/openvpn-as
+  #   container_name: openvpn-as
+  #   cap_add:
+  #     - NET_ADMIN
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=Europe/London
+  #     - INTERFACE=eth0 #optional
+  #   volumes:
+  #     - <path to data>:/config
+  #   ports:
+  #     - 943:943
+  #     - 9443:9443
+  #     - 1194:1194/udp
+  #     # qbittorrent ports
+  #     - 5080:5080
+  #     - 6881:6881
+  #     - 6881:6881/udp
+  #     # prowlarr ports
+  #     - 9696:9696
+  #   restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    # depends_on:
+    #   - openvpn-as
+    # network_mode: service:openvpn-as # Comment this line if vpn is disabled
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+      - WEBUI_PORT=8080
+    volumes:
+      - qbittorrent-config:/config
+      - torrent-downloads:/downloads
+    # Uncomment below ports if VPN is disabled.
+    ports:
+      - 8080:8080
+      - 6881:6881
+      - 6881:6881/udp
+    restart: unless-stopped
+
+  jackett:
+    image: lscr.io/linuxserver/jackett:latest
+    container_name: jackett
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+      - AUTO_UPDATE=true #optional
+    volumes:
+      - jackett-config:/config
+      - jackett-blackhole:/downloads
+    ports:
+      - 9117:9117
+    restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - radarr-config:/config
+      - radarr-movies:/movies
+      - torrent-downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - sonarr-config:/config
+      - sonarr-tvseries:/tv
+      - torrent-downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - bazarr-config:/config
+      - bazarr-movies:/movies
+      - torrent-downloads:/downloads
+    ports:
+      - 6767:6767
+    restart: unless-stopped
+
+  lidarr:
+    image: lscr.io/linuxserver/lidarr:latest
+    container_name: lidarr
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - lidarr-config:/config
+      - lidarr-music:/music
+      - torrent-downloads:/downloads
+    ports:
+      - 8686:8686
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    # # Comment this if vpn is disabled
+    # depends_on:
+    #   - vpn
+    # network_mode: service:vpn # Comment this line if vpn is disabled
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - prowlarr-config:/config
+    # Uncomment below ports if VPN is disabled.
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    networks:
+      - mynetwork
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Brazil
+    volumes:
+      - plex-config:/config
+      - sonarr-tvseries:/tv
+      - radarr-movies:/movies
+      - lidarr-music:/music
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    restart: unless-stopped
+
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    networks:
+      - mynetwork
+    environment:
+        - LOG_LEVEL=debug
+        - TZ=Brazil
+    ports:
+        - 5055:5055
+    volumes:
+        - jellyfin-config:/app/config
+    restart: unless-stopped
+
+volumes:
+  qbittorrent-config:
+  torrent-downloads:
+  jackett-config:
+  jackett-blackhole:
+  radarr-config:
+  radarr-movies:
+  sonarr-config:
+  sonarr-tvseries:
+  bazarr-config:
+  bazarr-movies:
+  lidarr-config:
+  lidarr-music:
+  prowlarr-config:
+  jellyfin-config:
+  ombi-config:
+  tx-config:
+  tx-watch:
+
+networks:
+  mynetwork:
+    external: true
+```
 
 ### Configuração dos programas;
 
