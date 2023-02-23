@@ -51,8 +51,6 @@ services:
   jackett:
     image: lscr.io/linuxserver/jackett:latest
     container_name: jackett
-    networks:
-      - mynetwork
     environment:
       - PUID=1000
       - PGID=1000
@@ -60,11 +58,11 @@ services:
       - AUTO_UPDATE=true #optional
     volumes:
       - jackett-config:/config
-      - jackett-blackhole:/downloads
+      - torrent-downloads:/downloads
     ports:
       - 9117:9117
     restart: unless-stopped
-
+    
   radarr:
     image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
@@ -107,10 +105,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Brazil
+      - TZ=Etc/UTC
     volumes:
       - bazarr-config:/config
-      - bazarr-movies:/movies
+      - sonarr-tvseries:/tv
+      - radarr-movies:/movies
       - torrent-downloads:/downloads
     ports:
       - 6767:6767
@@ -153,25 +152,22 @@ services:
       - 9696:9696
     restart: unless-stopped
 
-  jellyfin:
-    image: lscr.io/linuxserver/jellyfin:latest
-    container_name: jellyfin
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
     networks:
       - mynetwork
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Brazil
+      - TZ=Etc/UTC
+      - VERSION=docker
+      - PLEX_CLAIM= #optional
     volumes:
       - plex-config:/config
       - sonarr-tvseries:/tv
       - radarr-movies:/movies
       - lidarr-music:/music
-    ports:
-      - 8096:8096
-      - 8920:8920 #optional
-      - 7359:7359/udp #optional
-      - 1900:1900/udp #optional
     restart: unless-stopped
 
   jellyseerr:
@@ -185,25 +181,22 @@ services:
     ports:
         - 5055:5055
     volumes:
-        - jellyfin-config:/app/config
+      - plex-config:/app/config
     restart: unless-stopped
 
 volumes:
   qbittorrent-config:
   torrent-downloads:
-  jackett-config:
-  jackett-blackhole:
   radarr-config:
   radarr-movies:
   sonarr-config:
   sonarr-tvseries:
   bazarr-config:
-  bazarr-movies:
   lidarr-config:
   lidarr-music:
   prowlarr-config:
-  jellyfin-config:
-  ombi-config:
+  jackett-config:
+  plex-config:
   tx-config:
   tx-watch:
 
